@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of M. Priyambica, Computer Science Engineering student, AI/ML and full-stack developer.">
+  <meta name="author" content="M. Priyambica">
+  <meta name="theme-color" content="#0b1020">
+  <title>M. Priyambica | Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="-1">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header>
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand" href="#home" aria-label="Priyambica - home">
+          <span class="brand-mark">MP</span><span class="brand-text">Priyambica</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <button id="themeToggle" class="btn btn-icon" type="button" aria-label="Switch to light theme" title="Toggle theme">
+                <i class="bi bi-sun-fill" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-3" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <p class="status-pill reveal"><span class="pulse-dot" aria-hidden="true"></span> Open to internships &amp; full-time roles</p>
+            <p class="eyebrow reveal"><i class="bi bi-stars" aria-hidden="true"></i> Hello, I'm</p>
+            <h1 id="hero-title" class="display-name reveal">M. Priyambica</h1>
+            <p class="hero-role reveal">
+              I'm an <span id="typed" class="typed" aria-live="off"></span><span class="cursor" aria-hidden="true">|</span>
+            </p>
+            <p class="hero-lead reveal">
+              Final-year Computer Science &amp; Engineering student who builds intelligent, scalable software &mdash;
+              from computer-vision systems and RAG assistants to RESTful backends.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4 reveal">
+              <a href="#projects" class="btn btn-gradient btn-lg"><i class="bi bi-rocket-takeoff me-2" aria-hidden="true"></i>View Projects</a>
+              <a href="assets/Priyambica_Resume.pdf" class="btn btn-outline-accent btn-lg" download><i class="bi bi-download me-2" aria-hidden="true"></i>Download Resume</a>
+            </div>
+            <ul class="social-list list-unstyled d-flex gap-2 mb-0 reveal" aria-label="Social links">
+              <li><a href="https://github.com/m-priyambica" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="bi bi-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/priyambica-maroju" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="mailto:priyambica25@gmail.com" aria-label="Send email"><i class="bi bi-envelope-fill"></i></a></li>
+              <li><a href="tel:+917670912744" aria-label="Call"><i class="bi bi-telephone-fill"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center">
+            <figure class="avatar-wrap reveal mb-0">
+              <img src="assets/profile.jpg" alt="Portrait of M. Priyambica" class="avatar" width="320" height="320">
+              <span class="float-chip chip-1"><i class="bi bi-cpu" aria-hidden="true"></i> AI / ML</span>
+              <span class="float-chip chip-2"><i class="bi bi-braces" aria-hidden="true"></i> Python</span>
+              <span class="float-chip chip-3"><i class="bi bi-diagram-3" aria-hidden="true"></i> RAG</span>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><i class="bi bi-chevron-double-down"></i></a>
+    </section>
+
+    <!-- ============ TECH MARQUEE ============ -->
+    <section class="marquee" aria-label="Technologies I work with">
+      <div class="marquee-track">
+        <div class="marquee-group"><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Python</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>C</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>JavaScript</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>TensorFlow</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>LangChain</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>LangGraph</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>OpenCV</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Scikit-learn</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Pandas</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>NumPy</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>PostgreSQL</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>MySQL</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>SQLite</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Streamlit</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Git</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Postman</span></div>
+        <div class="marquee-group" aria-hidden="true"><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Python</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>C</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>JavaScript</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>TensorFlow</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>LangChain</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>LangGraph</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>OpenCV</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Scikit-learn</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Pandas</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>NumPy</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>PostgreSQL</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>MySQL</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>SQLite</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Streamlit</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Git</span><span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>Postman</span></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal" data-num="01">
+          <span class="section-kicker">01 &middot; About</span>
+          <h2 id="about-title">About Me</h2>
+        </header>
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-7 reveal">
+            <p class="lead-text">
+              I'm a Computer Science &amp; Engineering student at Stanley College of Engineering &amp; Technology for Women,
+              Hyderabad, with a CGPA of <strong>8.5</strong>. I enjoy turning ideas into working software, with a strong base in
+              problem solving, databases (SQL) and full-stack development.
+            </p>
+            <p>
+              My work spans computer vision (real-time vehicle counting and deepfake detection) and generative AI
+              (a hybrid-retrieval RAG assistant that gives cited, grounded answers). During my internship at
+              Fractal Analytics I engineered backend architecture and RESTful APIs for a Request for Proposal (RFP) tool.
+            </p>
+            <p class="mb-4">
+              I'm looking to join an innovative organisation as a <strong>Software Engineer</strong>, where I can build
+              scalable solutions and keep learning.
+            </p>
+
+            <h3 class="h5 mb-3">Experience</h3>
+            <ol class="timeline list-unstyled">
+              <li class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <div class="timeline-card spot">
+                  <div class="d-flex flex-wrap justify-content-between gap-2">
+                    <h4 class="h6 mb-0">Project Intern &mdash; Fractal Analytics</h4>
+                    <span class="badge badge-soft">May 2026 &ndash; Jul 2026</span>
+                  </div>
+                  <ul class="mt-2 mb-0 small-list">
+                    <li>Engineered backend architecture for a Request for Proposal (RFP) tool using Python.</li>
+                    <li>Built scalable RESTful APIs to power the tool.</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="row g-3" id="statsGrid">
+              <div class="col-6 reveal">
+                <div class="stat-card spot">
+                  <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+                  <span class="stat-number" data-target="8.5" data-decimals="1">0</span>
+                  <span class="stat-label">CGPA</span>
+                </div>
+              </div>
+              <div class="col-6 reveal">
+                <div class="stat-card spot">
+                  <i class="bi bi-kanban-fill" aria-hidden="true"></i>
+                  <span class="stat-number" data-target="3">0</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+              </div>
+              <div class="col-6 reveal">
+                <div class="stat-card spot">
+                  <i class="bi bi-briefcase-fill" aria-hidden="true"></i>
+                  <span class="stat-number" data-target="1">0</span>
+                  <span class="stat-label">Internship</span>
+                </div>
+              </div>
+              <div class="col-6 reveal">
+                <div class="stat-card spot">
+                  <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                  <span class="stat-number" data-target="3">0</span>
+                  <span class="stat-label">Certifications</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card spot mt-4 reveal">
+              <h3 class="h6 mb-3"><i class="bi bi-award-fill me-2 text-accent" aria-hidden="true"></i>Certifications</h3>
+              <ul class="cert-list list-unstyled mb-0">
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Working with Data <small>Microsoft Learn</small></span></li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Artificial Intelligence Fundamentals with Capstone Project <small>IBM</small></span></li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Computer Organization and Architecture <small>MindLusters</small></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section section-alt" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head reveal" data-num="02">
+          <span class="section-kicker">02 &middot; Academic Background</span>
+          <h2 id="edu-title">Education</h2>
+        </header>
+
+        <div class="table-responsive glass-card p-0 reveal">
+          <table class="table table-hover align-middle mb-0 edu-table">
+            <caption class="visually-hidden">Educational qualifications</caption>
+            <thead>
+              <tr>
+                <th scope="col">Institution</th>
+                <th scope="col">Qualification</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Stanley College of Engineering &amp; Technology for Women</th>
+                <td>B.E. in Computer Science &amp; Engineering</td>
+                <td>2023 &ndash; 2027</td>
+                <td><span class="badge badge-score">CGPA 8.5</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Narayana College</th>
+                <td>Class XII (Intermediate)</td>
+                <td>2021 &ndash; 2023</td>
+                <td><span class="badge badge-score">80%</span></td>
+              </tr>
+              <tr>
+                <th scope="row">St Ann's High School</th>
+                <td>Class X (SSC)</td>
+                <td>2020 &ndash; 2021</td>
+                <td><span class="badge badge-score">90%</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal" data-num="03">
+          <span class="section-kicker">03 &middot; Toolbox</span>
+          <h2 id="skills-title">Technical Skills</h2>
+        </header>
+
+        <div class="skill-tabs reveal" role="tablist" aria-label="Skill categories" id="skillTabs">
+          <!-- buttons are generated by js/script.js -->
+        </div>
+
+        <div class="row g-4 mt-1" id="skillPanel" role="tabpanel" aria-live="polite">
+          <!-- skill cards are generated by js/script.js -->
+        </div>
+
+        <noscript>
+          <p class="alert alert-warning mt-4">Enable JavaScript to see the interactive skills panel. Skills: Python, C, JavaScript, PostgreSQL, MySQL, SQLite, Scikit-learn, Pandas, TensorFlow, NumPy, LangChain, LangGraph, HTML5, CSS3, Streamlit, Git, GitHub, VS Code, Postman.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal" data-num="04">
+          <span class="section-kicker">04 &middot; Work</span>
+          <h2 id="projects-title">Featured Projects</h2>
+        </header>
+
+        <div class="filter-bar reveal" role="group" aria-label="Filter projects by category">
+          <button type="button" class="btn btn-filter active" data-filter="all">All</button>
+          <button type="button" class="btn btn-filter" data-filter="ai">AI / ML</button>
+          <button type="button" class="btn btn-filter" data-filter="vision">Computer Vision</button>
+          <button type="button" class="btn btn-filter" data-filter="genai">GenAI / NLP</button>
+        </div>
+        <p id="projectCount" class="text-muted-2 small mt-3" role="status"></p>
+
+        <div class="row g-4" id="projectGrid">
+
+          <div class="col-md-6 col-xl-4 project-item" data-category="vision ai">
+            <article class="card project-card spot h-100 reveal">
+              <div class="project-thumb thumb-1" aria-hidden="true"><i class="bi bi-camera-video"></i></div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="card-title h5 mb-0">Vehicle Counting at Traffic Signal</h3>
+                  <span class="badge badge-done">Completed</span>
+                </div>
+                <p class="card-text">Real-time traffic monitoring system that detects and counts vehicles from video streams.</p>
+                <button class="btn btn-sm btn-link px-0 text-start details-toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#details-1" aria-expanded="false" aria-controls="details-1">
+                  Highlights <i class="bi bi-chevron-down ms-1" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="details-1">
+                  <ul class="small-list mb-3">
+                    <li>Object tracking with region-of-interest (ROI) filtering and bounding-box logic.</li>
+                    <li>Background subtraction and contour detection to isolate moving vehicles.</li>
+                  </ul>
+                </div>
+                <div class="tag-row mt-auto mb-3">
+                  <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">NumPy</span><span class="tag">Computer Vision</span>
+                </div>
+                <a href="https://github.com/m-priyambica" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-accent align-self-start">
+                  <i class="bi bi-github me-1" aria-hidden="true"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 project-item" data-category="ai vision">
+            <article class="card project-card spot h-100 reveal">
+              <div class="project-thumb thumb-2" aria-hidden="true"><i class="bi bi-shield-check"></i></div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="card-title h5 mb-0">Fake Media Detector</h3>
+                  <span class="badge badge-done">Completed</span>
+                </div>
+                <p class="card-text">Deep-learning system that identifies manipulated images and deepfake media.</p>
+                <button class="btn btn-sm btn-link px-0 text-start details-toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#details-2" aria-expanded="false" aria-controls="details-2">
+                  Highlights <i class="bi bi-chevron-down ms-1" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="details-2">
+                  <ul class="small-list mb-3">
+                    <li>Computer-vision pipeline using OpenCV and Convolutional Neural Networks (CNNs).</li>
+                    <li>Analyses pixel-level artifacts to classify media authenticity.</li>
+                  </ul>
+                </div>
+                <div class="tag-row mt-auto mb-3">
+                  <span class="tag">Python</span><span class="tag">TensorFlow / PyTorch</span><span class="tag">OpenCV</span><span class="tag">CNN</span>
+                </div>
+                <a href="https://github.com/m-priyambica" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-accent align-self-start">
+                  <i class="bi bi-github me-1" aria-hidden="true"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 project-item" data-category="genai ai">
+            <article class="card project-card spot h-100 reveal">
+              <div class="project-thumb thumb-3" aria-hidden="true"><i class="bi bi-file-earmark-text"></i></div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="card-title h5 mb-0">RAG Document Assistant</h3>
+                  <span class="badge badge-done">Completed</span>
+                </div>
+                <p class="card-text">Question-answering assistant for custom documents with grounded, source-cited answers.</p>
+                <button class="btn btn-sm btn-link px-0 text-start details-toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#details-3" aria-expanded="false" aria-controls="details-3">
+                  Highlights <i class="bi bi-chevron-down ms-1" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="details-3">
+                  <ul class="small-list mb-3">
+                    <li>Hybrid retrieval combining Chroma vector search and BM25 keyword indexing.</li>
+                    <li>Google Gemini API with cross-encoder reranking and exact source citations.</li>
+                    <li>Served through a custom standard-library HTTP backend.</li>
+                  </ul>
+                </div>
+                <div class="tag-row mt-auto mb-3">
+                  <span class="tag">LangChain</span><span class="tag">Gemini API</span><span class="tag">Chroma</span><span class="tag">BM25</span>
+                </div>
+                <a href="https://github.com/m-priyambica" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-accent align-self-start">
+                  <i class="bi bi-github me-1" aria-hidden="true"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <p id="noProjects" class="alert alert-info mt-4 d-none" role="alert">No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal" data-num="05">
+          <span class="section-kicker">05 &middot; Get in touch</span>
+          <h2 id="contact-title">Contact Me</h2>
+        </header>
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5 reveal">
+            <p class="lead-text">Have an opportunity, a project idea or just want to say hi? My inbox is open.</p>
+            <ul class="contact-list list-unstyled">
+              <li>
+                <span class="contact-icon"><i class="bi bi-envelope-fill" aria-hidden="true"></i></span>
+                <div><small>Email</small><a href="mailto:priyambica25@gmail.com">priyambica25@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
+                <div><small>Phone</small><a href="tel:+917670912744">+91 76709 12744</a></div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="bi bi-linkedin" aria-hidden="true"></i></span>
+                <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/priyambica-maroju" target="_blank" rel="noopener noreferrer">Priyambica Maroju</a></div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="bi bi-github" aria-hidden="true"></i></span>
+                <div><small>GitHub</small><a href="https://github.com/m-priyambica" target="_blank" rel="noopener noreferrer">m-priyambica</a></div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></span>
+                <div><small>Location</small><span>Hyderabad, Telangana, India</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <form id="contactForm" class="glass-card spot" novalidate aria-label="Contact form">
+              <div id="formAlert" role="alert" aria-live="polite"></div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Full name <span class="text-danger" aria-hidden="true">*</span></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+                  <div class="invalid-feedback" id="nameError"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email <span class="text-danger" aria-hidden="true">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                  <div class="invalid-feedback" id="emailError"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone <span class="text-muted-2">(optional)</span></label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="10-digit number" autocomplete="tel">
+                  <div class="invalid-feedback" id="phoneError"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="subject" class="form-label">Subject <span class="text-danger" aria-hidden="true">*</span></label>
+                  <select class="form-select" id="subject" name="subject" required>
+                    <option value="" selected disabled>Choose a topic</option>
+                    <option>Job / Internship opportunity</option>
+                    <option>Project collaboration</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
+                  </select>
+                  <div class="invalid-feedback" id="subjectError"></div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-danger" aria-hidden="true">*</span></label>
+                  <textarea class="form-control" id="message" name="message" rows="5" maxlength="500" placeholder="Write your message (minimum 20 characters)" required></textarea>
+                  <div class="d-flex justify-content-between">
+                    <div class="invalid-feedback" id="messageError"></div>
+                    <small class="text-muted-2 ms-auto" id="charCount">0 / 500</small>
+                  </div>
+                </div>
+                <div class="col-12 d-flex flex-wrap gap-2">
+                  <button type="submit" class="btn btn-gradient btn-lg"><i class="bi bi-send-fill me-2" aria-hidden="true"></i>Send message</button>
+                  <button type="reset" class="btn btn-outline-accent btn-lg" id="resetBtn">Clear</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0">&copy; <span id="year">2026</span> M. Priyambica. All rights reserved.</p>
+      <p class="mb-0 small text-muted-2">Built with HTML5, CSS3, Bootstrap &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
